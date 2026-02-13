@@ -1,5 +1,5 @@
-<p align="center"> <b>Backend Post Scheduling & Engagement Optimization Engine</b><br> Built with Node.js & Express </p> <p align="center"> <img src="https://img.shields.io/badge/build-passing-brightgreen" /> <img src="https://img.shields.io/badge/version-1.0.0-blue" /> <img src="https://img.shields.io/badge/license-MIT-yellow" /> <img src="https://img.shields.io/badge/node-18%2B-green" /> </p>
-📊 Social Media Manager
+<p align="center"> <b>📊 Social Media Manager Agent </b><br> Built with Node.js & Express </p> <p align="center"> <img src="https://img.shields.io/badge/build-passing-brightgreen" /> <img src="https://img.shields.io/badge/version-1.0.0-blue" /> <img src="https://img.shields.io/badge/license-MIT-yellow" /> <img src="https://img.shields.io/badge/node-18%2B-green" /> </p>
+
 
 A backend-driven Social Media Post Scheduling & Analytics System built with Node.js and Express.
 

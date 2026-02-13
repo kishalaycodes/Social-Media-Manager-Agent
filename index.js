@@ -16,9 +16,7 @@ const DATA_PATH = path.join(__dirname, "data", "posts.json");
 
 console.log("🚀 Social Media Manager API Running...");
 
-/* =========================
-   Utility Functions
-========================= */
+
 
 function getPosts() {
   if (!fs.existsSync(DATA_PATH)) {
@@ -33,11 +31,7 @@ function savePosts(posts) {
   fs.writeFileSync(DATA_PATH, JSON.stringify(posts, null, 2));
 }
 
-/* =========================
-   Routes
-========================= */
 
-// GET all posts
 
 
 app.get("/api/posts", (req, res) => {
@@ -72,17 +66,17 @@ if (!time) {
 }
 
 
-    // 🔥 VALIDATION USING AGENT
+  
     const validationError = validatePost(posts, topic, scheduledTime);
 
     if (validationError) {
       return res.status(400).json(validationError);
     }
 
-    // Create post using agent
+
     const post = createPost(topic, scheduledTime);
 
-    // Update engagement BEFORE saving
+ 
     post.likes = likes;
     post.comments = comments;
     post.shares = shares;

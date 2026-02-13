@@ -4,6 +4,7 @@
 A backend-driven Social Media Post Scheduling & Analytics System built with Node.js and Express.
 
 
+
 🚀 Project Overview
 
 Social Media Manager is a lightweight scheduling engine that allows users to:
@@ -21,6 +22,10 @@ Suggest best posting time based on historical engagement
 View all scheduled posts in a structured dashboard
 
 This project focuses on clean backend architecture, separation of concerns, and modular agent-based logic
+
+
+
+
 
 🧠 Core Architecture
 
@@ -53,6 +58,9 @@ Auto schedules posts
 
 . Uses engagement history
 
+
+
+
 ✨ Features
 📌 Post Scheduling
 
@@ -70,11 +78,18 @@ Time conflict detection
 
 Automatic delay with alert notification
 
+
+
+
 📊 Smart Time Suggestion
 
 Calculates total engagement per time slot
 
 Recommends highest performing time
+
+
+
+
 
 🎨 Dashboard
 
@@ -87,7 +102,10 @@ Engagement metrics display
 Dynamic alert system
 
 
-## 🛠 Tech Stack
+
+
+
+🛠 Tech Stack
 
  Layer       Technology                    
  Backend    | Node.js                       
@@ -95,6 +113,9 @@ Dynamic alert system
  Frontend   | HTML, CSS, Vanilla JavaScript 
  Storage    | JSON File                     
  Versioning | Git & GitHub                  
+
+
+
 
 
 📌 What This Project Demonstrates

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Manager</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .posts {
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .post-item {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+
+    .post-item h4 {
+      margin: 5px 0;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: gray;
+    }
+    .message-box {
+  display: none;
+  padding: 12px;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+
+  </style>
+</head>
+<body>
+
+<header>📊 Social Media Manager Dashboard</header>
+
+<div class="dashboard">
+
+  <!-- Create Post Section -->
+  <div class="card">
+    <h3>Create Post</h3>
+
+    <input type="text" id="topic" placeholder="Post topic">
+    <input type="text" id="time" placeholder="Time (HH:MM) or leave empty">
+    <input type="text" id="likes" placeholder="Likes">
+    <input type="text" id="comments" placeholder="Comments">
+    <input type="text" id="shares" placeholder="Shares">
+
+    <button type="button" onclick="createPost()">Schedule Post</button>
+
+    <div id="result" style="margin-top:15px;"></div>
+  </div>
+  <div id="messageBox" class="message-box"></div>
+
+
+  <!-- Posts List Section -->
+  <div class="card">
+    <h3>Scheduled Posts</h3>
+    <div class="posts" id="postsList"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,8 +1,5 @@
-// agents/postAgent.js
-
-// 🔍 Validate duplicate topic and time
 function validatePost(posts, topic, time) {
-  // Check duplicate topic
+
   const duplicateTopic = posts.find(
     (p) => p.topic.toLowerCase() === topic.toLowerCase()
   );
@@ -11,7 +8,7 @@ function validatePost(posts, topic, time) {
     return { error: "A post with the same topic already exists." };
   }
 
-  // Check duplicate time
+  
   const duplicateTime = posts.find(
     (p) => p.time === time
   );
@@ -20,11 +17,10 @@ function validatePost(posts, topic, time) {
     return { error: "Another post is already scheduled at this time." };
   }
 
-  return null; // No validation errors
+  return null; 
 }
 
 
-// 🧠 Create post object (pure logic)
 function createPost(topic, time) {
   return {
     id: Date.now(),
